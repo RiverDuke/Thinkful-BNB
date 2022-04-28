@@ -63,7 +63,7 @@ header {
   padding: 20px 20px 0 20px;
   text-align: center;
   /* border: 2px solid black; */
-  margin: 20px;
+
   width: auto;
 }
 
@@ -155,7 +155,7 @@ footer p {
 /* -------  Media Query ------- */
 @media all and (min-width: 480px) {
   .logo {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   header {
@@ -233,5 +233,11 @@ footer p {
   .square {
     flex: 1;
     margin: 0 5px 0 5px;
+  }
+}
+
+@media all and (max-width: 419px) {
+  .logo {
+    font-size: 39px;
   }
 }
