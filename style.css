@@ -59,11 +59,12 @@ main img {
 /* -------  Navigation ------- */
 
 header {
+  display: flex;
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
   /* border: 2px solid black; */
-
+  flex-direction: column;
   width: auto;
 }
 
@@ -155,7 +156,7 @@ footer p {
 /* -------  Media Query ------- */
 @media all and (min-width: 480px) {
   .logo {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   header {
@@ -167,12 +168,8 @@ footer p {
     text-align: left;
   }
 
-  header nav ul li {
-    display: inline-block;
-  }
-
-  header nav ul :last-child {
-    margin-right: 20px;
+  header nav {
+    align-content: left;
   }
 
   form {
